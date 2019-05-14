@@ -1,0 +1,231 @@
+main {
+    font-size: 5.5vw;
+}
+.main-slogan {
+    background-image: url("../img/980/header-fon-980.png");
+}
+.main-title {
+    padding: 3% 0 0 6%;
+    line-height: 7.4vw;
+}
+
+.main-header{
+    height: 2.6em;
+}
+
+.main-header-text {
+    display: none;
+}
+
+.main-header-nav-btn {
+    display: none;
+}
+.main-header-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: center;
+    position: initial;
+    width:80vw;
+    height: 100%;
+    background-color: transparent;
+    margin-left: 10px;
+    z-index: 300;
+}
+
+.main-header-nav-menu li {
+    padding: 1.5em;
+    font-size: 1.5vw;
+    border: none;
+    text-transform: uppercase;
+
+}
+.main-header-nav-menu li a {
+    color: white;
+}
+
+.main-header-nav-menu li:hover {
+    background-color: #acd8ad;
+}
+
+.main-header-nav-menu li:active {
+    background-color: #3f4043;
+}
+
+.main-header-pizza{
+    display: block;
+    margin-right: 0.7em;
+    transform: scale(0.7);
+    height: 110%;
+}
+
+.main-title{
+    padding-left: 0.6em;
+    padding-top: 1em;
+}
+
+.sub-title {
+    font-size: 4vw;
+    padding: 3% 0 0 3%;
+    line-height: 5vw;
+
+}
+
+.services-galery {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.services-galery ul {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.services-galery-items {
+    display:inline-block;
+    position: relative;
+    height: 6em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.services-galery-items>div{
+    /*background-size: initial;*/
+    width: 100%;
+    /*height: 50%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-galery-items>div>h2 {
+    font-size: 4vw;
+    color: var(--text-color);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.services-galery-items>div+div{
+    display: none;
+
+}
+
+.services-galery-item-pizza-delivery {
+    background-image: url("../img/980/Pizza-delivery-fon-980.png");
+    padding: 0;
+    margin: 0;
+}
+.services-galery-item-salads {
+    background-image: url("../img/980/UA_UX-Salads-fon-980.png");
+    padding: 0;
+    margin: 0;
+}
+.services-galery-item-desserts {
+    background-image: url("../img/980/Desserts-fon-980.png");
+    padding: 0;
+    margin: 0;
+}
+
+.meals-menu-header {
+    padding-top: 5vw;
+    padding-left: 3vw;
+
+}
+
+.meals-menu-header h2{
+    font-size: 0.65em;
+
+}
+
+.meals-menu-header p{
+    font-size: 0.3em;
+    padding-top: .5em;
+    padding-bottom: .6em;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+}
+
+.meals-menu-drink h2,
+.meals-menu-eat h2 {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 0.65em;
+
+}
+
+.wrap-meals-menu-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meals-menu-header img {
+    display: block;
+    padding-right: 0.5em;
+}
+
+.meals-menu-eat-title {
+    height: inherit;
+}
+h2 {
+    padding: 0;
+}
+.meals-menu-eat-title{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 0.47em;
+    margin: 1.8vw 0.5vw 0 2vw;
+}
+
+.title i {
+    transform: scale(0.6);
+}
+
+table {
+    line-height: 5vw;
+}
+
+.meals-menu-drink-table-name, .meals-menu-drink-table-price {
+    font-size: 0.45em;
+    line-height: 1.2;
+}
+
+.meals-menu-drink-table-description {
+    font-size: 0.3em;
+    padding: 0.6em;
+}
+
+footer {
+    height: 10vw;
+    margin-top: 2vw;
+    font-size:0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+footer img{
+    display: block;
+    padding-left: 1em;
+    height: 80%;
+}
+footer p{
+    padding-right: 1em;
+}
+
+@media only screen and (min-width: 750px) {
+    footer {
+        font-size: 1.1em;
+    }
+}

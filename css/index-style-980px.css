@@ -1,0 +1,40 @@
+
+    .main-slogan {
+        background-image: url("../img/1200/header-fon-1200.png");
+    }
+    .services-galery-item-pizza-delivery {
+        background-image: url("../img/1200/Pizza-delivery-1200.png");
+    }
+    .services-galery-item-salads {
+        background-image: url("../img/1200/UA_UX-Salads-1200.png");
+    }
+    .services-galery-item-desserts {
+        background-image: url("../img/1200/Desserts-fon-1200.png");
+    }
+    .services-galery-item-pizza-delivery {
+        background-image: url("../img/980/Pizza-delivery-fon-980.png");
+    }
+    .services-galery-item-salads {
+        background-image: url("../img/980/UA_UX-Salads-fon-980.png");
+    }
+    .services-galery-item-desserts {
+        background-image: url("../img/980/Desserts-fon-980.png");
+    }
+
+    .main-header {
+        height: 2.1em;
+    }
+
+    .main-title{
+        padding-top: 0.4em;
+        font-size: 0.9em;
+    }
+    .sub-title {
+        font-size: 3.3vw;
+    }
+
+    .meals-menu-header img {
+        width: 11%;
+    }
+
+

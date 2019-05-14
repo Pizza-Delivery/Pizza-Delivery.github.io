@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+    --first-font: 'Lato', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --text-color: white;
+    --green: #acd8ad;
+    --black: #373c3f;
+}
+body {
+    min-width: 320px;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--black);
+    font-family: var(--secondary-font);
+    font-size: 3.8vw;
+    height: 12vw;
+    z-index: 200;
+}
+
+.main-header-text {
+    color: var(--text-color);
+    padding-left: 6vw;
+    padding-bottom: 2px;
+
+}
+
+.main-header-nav-btn {
+    color: var(--text-color);
+    height: 100%;
+    width: 12.7vw;
+    background-color: #202529;
+    font-size: 4vw;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: center;
+
+}
+
+.main-header-nav-btn a{
+    text-decoration: none;
+}
+
+.trigram::after {
+    display: block;
+    margin-top: -9%;
+    margin-right: -4%;
+    content: url('../css/bars-solid.svg');
+    filter: invert(100%);
+    transform: scaleY(0.7);
+    padding: 33%;
+}
+
+.cross::after {
+    font-size: 7.5vw;
+    padding: 25%;
+    content: '\2716';
+    filter: invert(0%);
+    transform: none;
+}
+
+.main-header-nav-menu.active {
+    display: block;
+}
+
+.main-header-nav-menu {
+    display: none;
+    position: absolute;
+    top: 99%;
+    right: 0;
+    width: 15em;
+    background-color: #fafafa;
+    z-index: 100;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.main-header-nav-menu li {
+    font-family: var(--first-font);
+    color: rgb(68, 68, 68);
+    font-size: 1em;
+    border: 1px solid rgb(233, 233, 233);
+    padding: 0.7em 1em;
+    z-index: 100;
+}
+
+.main-header-nav-menu li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.main-header-nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-header-nav-btn:hover {
+    background-color: lightslategray;
+}
+
+.main-header-pizza{
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--first-font);
+    font-weight: bold;
+    font-size: 4.8vw;
+}
+
+.main-slogan {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex-basis: 54vw;
+    text-shadow: -1px 0 #202529;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.main-title {
+    padding: 3% 0 0 6.3%;
+    transform: scaleY(0.9);
+    line-height: 7.9vw;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    font-size: 4vw;
+    padding: 2% 0 0 7%;
+    color: #a6d6e0;
+    transform: scaleY(0.9);
+    letter-spacing: 0.6px;
+}
+
+.services-galery {
+    padding-top: 1.2%;
+}
+
+.services-galery-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2px;
+    position: relative;
+    height: 23vw;
+}
+.services-galery-items>div{
+    background-size: 100% 100%;
+    width: 78%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-galery-items>div>h2 {
+    font-size: 6.2vw;
+    color: var(--text-color);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: -5px;
+    margin-left: 3px;
+}
+
+.services-galery-items>div+div{
+    background-color: var(--green);
+    width: 22%;
+    height: 100%;
+    position: relative;
+}
+
+.services-galery-items div a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 41%;
+    left:45%;
+    font-size: 3.5vw;
+}
+
+.services-galery-item-pizza-delivery {
+    background-repeat: no-repeat;
+}
+.services-galery-item-salads {
+    background-repeat: no-repeat;
+}
+.services-galery-item-desserts {
+    background-repeat: no-repeat;
+}
+
+.meals-menu {
+    font-weight: normal;
+    color: rgb(203, 204, 206);
+}
+
+.meals-menu-header {
+    padding:  19px 8px 12px 8px;
+
+}
+.meals-menu-header div {
+    text-align: justify;
+}
+
+.meals-menu-header div h2{
+    letter-spacing: 0.47px;
+    color: rgb(63, 64, 67);
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.meals-menu-header p {
+    font-size: 3vw;
+    letter-spacing: 0.2px;
+    color: rgb(203, 204, 206);
+}
+
+.meals-menu-header img{
+    display: none;
+}
+
+.meals-menu-eat-title {
+    background-color: #3f4043;
+    width: 100%;
+    height: 11vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.meals-menu-eat-title h2 {
+    letter-spacing: 0.5px;
+    color: rgb(172, 216, 173);
+    text-transform: uppercase;
+    padding-left: 18px;
+}
+
+
+
+.title {
+    font-size: 4.7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(63, 64, 67);
+    text-transform: uppercase;
+    margin: 0 18px;
+}
+
+.title i {
+    font-size: 7.5vw;
+    color: #acd8ad;
+}
+
+.fa-wine-glass-alt {
+    padding-right: 5px;
+}
+.fa-coffee {
+    margin-right:-4px;
+}
+
+.fa-beer {
+    padding-right: 4px;
+}
+
+table {
+    line-height: 1.8;
+    color: rgb(63, 64, 67);
+    margin: 12px  18px 11px 17px ;
+}
+.meals-menu-drink-table-name, .meals-menu-drink-table-price {
+    font-size: 4.1vw;
+}
+.meals-menu-drink-table-name {
+    letter-spacing: 0.2px;
+}
+.meals-menu-drink-table-price {
+    font-weight: bold;
+    text-align: right;
+}
+
+.meals-menu-drink-table-description {
+    font-size: 2.7vw;
+    padding-bottom: 5px;
+    text-align: justify;
+    padding-left: 1px;
+    line-height: 1.3;
+}
+
+.meals-menu-drink h2 {
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--green);
+    padding: 9px 0 11px 19px;
+    margin-top: 25px;
+    margin-bottom: 11px;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    font-size: 3.5vw;
+    letter-spacing: 0.4px;
+    font-family: var(--secondary-font);
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 17vw;
+    background-color:rgb(172, 216, 173);
+    margin-top: 33px;
+    /*margin-bottom: 50px;*/
+
+}
+
+footer img{
+    display: none;
+}
+
+@media only screen and (max-width: 399px) {
+    .main-slogan {
+        background-image: url("../img/header-fon-320.png");
+    }
+
+    .services-galery-item-pizza-delivery {
+
+        background-image: url("../img/PizzaDeliveryFon-320.png");
+    }
+    .services-galery-item-salads {
+        background-image: url("../img/UA_UX-SaladsFon-320.png");
+    }
+    .services-galery-item-desserts {
+        background-image: url("../img/DessertsFon-320.png");
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+    .main-slogan {
+        background-image: url("../img/640/header-fon-640.png");
+    }
+    .services-galery-item-pizza-delivery {
+        background-image: url("../img/640/Pizza-delivery-fon-640.png");
+    }
+    .services-galery-item-salads {
+        background-image: url("../img/640/UA_UX-Salads-fon-640.png");
+    }
+    .services-galery-item-desserts {
+        background-image: url("../img/640/Desserts-fon-640.png");
+    }
+    .main-header-nav-menu {
+        width: 10em;
+    }
+
+    .main-header-nav-menu li {
+        font-size: 0.6em;
+        padding: 0.85em 1.6em;
+        z-index: 100;
+    }
+}
